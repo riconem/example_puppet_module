@@ -1,7 +1,7 @@
-# example_puppet_module
+# Example Puppet module
 This is an example Puppet module of how to build custom resources for Puppet with [Types](lib/puppet/type) and [Providers](lib/puppet/provider).
 
-### Example Module tree for custom Types and Providers
+### Example module tree for custom Types and Providers
 ```
 example_puppet_module
 ├── lib
