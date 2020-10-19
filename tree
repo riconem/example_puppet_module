@@ -1,0 +1,10 @@
+example/
+├── lib
+│   └── puppet
+│       ├── provider
+│       │   └── custom_resource
+│       │       └── resource.rb
+│       └── type
+│           └── custom_resource.rb
+└── manifests
+    └── init.pp
