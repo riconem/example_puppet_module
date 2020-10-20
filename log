@@ -1,0 +1,23 @@
+root@puppetmaster:~# puppet apply /etc/puppetlabs/code/environments/production/manifests/site.pp
+Notice: Compiled catalog for puppetmaster.speedport.ip in environment production in 0.15 seconds
+Notice: Deleting /json_files/data.json.
+Notice: /Stage[main]/Example_puppet_module/Json_file[data]/ensure: removed
+Notice: Deleting /json_files/more_data.json.
+Notice: /Stage[main]/Example_puppet_module/Json_file[more_data]/ensure: removed
+Notice: Applied catalog in 0.03 seconds
+root@puppetmaster:~# puppet apply /etc/puppetlabs/code/environments/production/manifests/site.pp
+Notice: Compiled catalog for puppetmaster.speedport.ip in environment production in 0.16 seconds
+Notice: Applied catalog in 0.03 seconds
+root@puppetmaster:~# puppet apply /etc/puppetlabs/code/environments/production/manifests/site.pp
+Notice: Compiled catalog for puppetmaster.speedport.ip in environment production in 0.11 seconds
+Notice: Creating /json_files/more_data.json with the following data:
+Notice: {"holy"=>"data", "more"=>"data"}
+Notice: /Stage[main]/Example_puppet_module/Json_file[more_data]/ensure: created
+Notice: Creating /json_files/data.json with the following data:
+Notice: {"holy"=>"data"}
+Notice: /Stage[main]/Example_puppet_module/Json_file[data]/ensure: created
+Notice: Data in /json_files/data.json:
+Notice: {"holy"=>"data"}
+Notice: /Stage[main]/Example_puppet_module/Json_file[data]: Triggered 'refresh' from 1 event
+Notice: Applied catalog in 0.03 seconds
+root@puppetmaster:~#
