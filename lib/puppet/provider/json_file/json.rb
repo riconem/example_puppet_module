@@ -10,7 +10,7 @@ Puppet::Type.type(:json_file).provide :json do
         @data = resource[:data]
         if File.exists?(@file_path)
             old_data = JSON.parse(File.read(@file_path))
-            return true if old_data == @data
+            return true if old_data == @data or resource[:ensure] == :absent
         end
         return false
     end

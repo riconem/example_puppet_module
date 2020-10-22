@@ -8,7 +8,6 @@ Puppet::Type.newtype(:json_file) do
         defaultvalues
 
         newvalue(:print_data) do
-            desc 'print json file'
             provider.print_data
         end
     end
