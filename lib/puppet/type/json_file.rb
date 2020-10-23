@@ -26,7 +26,7 @@ Puppet::Type.newtype(:json_file) do
     newparam(:dir) do
         desc 'json file resource directory'
         validate do |value|
-            raise('Inserted value for data is not valid') unless value.class == String
+            raise('Inserted value for dir is not valid') unless value.class == String
         end
     end
 
