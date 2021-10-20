@@ -2,7 +2,7 @@
 # By change to Puppet::Type.newtype(:json_file, self_refresh: true) do
 
 Puppet::Type.newtype(:json_file) do
-    desc 'This is a example of a custom resource in Puppet that creates json data under :dir'
+    desc 'This is an example of a custom resource in Puppet that creates json data under :dir'
 
     ensurable do
         defaultvalues
